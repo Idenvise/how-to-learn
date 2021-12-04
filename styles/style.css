@@ -98,6 +98,7 @@
 .two-columns__main-text{
   width: 80%;
   min-width: 784px;
+  min-height: 331px;
 }
 .two-columns__paragraph{
   line-height: 34px;
