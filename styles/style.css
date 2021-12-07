@@ -1,6 +1,7 @@
-* {
+.page .header .header__link .logo .logo_place_header .header__title .header__subtitle .header__main-illustration .header__square-pic .description .two-columns .two-columns__brief .two-columns__main-text .two-columns__paragraph .two-columns__span-accent .digits .section-title .section-subtitle .table .table__cell .table__headling .table__text .feynman .feynman__title .feynman__subtitle .feynman__img .feynman__link .kaufman .section-title_theme_dark .section-subtitle_theme_dark .table_theme_dark .table__cell_theme_dark .table__headling_theme_dark .table__text_theme_dark .kaufman__triangle .footer .footer__columns .footer__column_content_copyright .logo__place_footer .footer__column_content_info .footer__column-heading .footer__column_links .footer__column_content_social .footer__column_links_img {
   margin: 0;
 }
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -16,11 +17,13 @@
   display: flex;
   position: relative;
 }
+.header__link{
+  text-decoration: none;
+  color: #2f80ed;
+}
 
 .logo {
-  position: absolute;
   z-index: 1;
-  background-image: url('../images/logo_place_header.svg');
   height: 32px;
   width: 183px;
   background-size: cover;
@@ -29,16 +32,16 @@
 .logo_place_header {
   left: 64px;
   top: 30px;  
+  position: absolute;
+  background-image: url('../images/logo_place_header.svg');
 }
 
 .header__title {
   width: 730px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-self: center;
   line-height: 96px;
   font-size: 108px;
-  margin-left: 64px;
+  margin: 0 0 0 64px ;
   font-weight: bold;
   z-index: 2;
 }
@@ -48,34 +51,28 @@
   font-weight: normal;
   width: 388px;
   z-index: 2;
-}
-.header__subtitle_position {
   position: absolute;
   left: 64px;
   bottom: 30px;
 }
+
 .header__main-illustration {
   z-index: 1;
-}
-.header__main-illustration_size { 
   width: 765px;
   height: 608px;
-}
-.header__main-illustration_position {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 0;
+  bottom: 0;
 }
+
 .header__square-pic {
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
   z-index: 0;
-}
-.header__square-pic_position {
   position: absolute;
-  top: 30px;
-  right: 0px;
+  top: 64px;
+  right: 0;
 }
 .description{
   display: flex;
@@ -87,6 +84,7 @@
   width: 80%;
   justify-content: space-between;
   display: flex;
+  background-color: white;
 }
 
 .two-columns__brief{
@@ -94,21 +92,22 @@
   font-size: 18px;
   font-weight: normal;
   width: 175px;
+  color: #2f80ed;
 }
 .two-columns__main-text{
   width: 80%;
   min-width: 784px;
-  min-height: 331px;
 }
 .two-columns__paragraph{
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;  
 }
-.two-columns__paragraph_margin{
-  margin-top: 30px; 
+.two-columns__paragraph:nth-of-type(2n){
+  margin: 30px 0;
 }
-.span_accent{
+
+.two-columns__span-accent{
   font-weight: bold;
 }
 
@@ -116,27 +115,26 @@
   flex-direction: column;
   margin-top: 100px;
   display: flex;
+  background-color: white;
 }
-.section__title {
+.section-title {
   text-align: center;
   width: 60%;
   margin: 0 auto;
-}
-.section__title_text {
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
-.section__subtitle {
+
+.section-subtitle {
   width: 60%;
   text-align: center;
   margin: 20px auto 0;
-}
-.section__subtitle_text {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
+
 .table {
   margin: 0 auto;
   display: flex;
@@ -151,24 +149,25 @@
   width: 250px;
   margin-top: 60px;
 }
-.table__cell_headling {
+.table__headling {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
-.table__cell_text {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
 }
 .feynman {
-  margin-top: 100px;
-  height: 890px;
+  padding-top: 100px;
+  min-height: 890px;
   width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
+  box-sizing: border-box;
 }
 .feynman__title {
   line-height: 1.15;
@@ -194,8 +193,8 @@
   background-size: cover;
   height: 637px;
   width: 867px;
-  left: 0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
 }
 
 .feynman__link {
@@ -205,7 +204,9 @@
   position:absolute;
   right: 48px;
   top: 50%;
-  margin: auto 0;
+  text-decoration: none;
+  color: #2f80ed;
+  z-index: 1;
 }
 
 .kaufman{
@@ -218,13 +219,13 @@
   background-color: #1f1f1f;
   overflow: hidden;
 }
-.section__title_text_theme_dark {
+.section-title_theme_dark {
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   z-index: 1;
 }
-.section__subtitle_text_theme_dark {
+.section-subtitle_theme_dark {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -245,14 +246,14 @@
   margin-top: 80px;
   z-index: 1;
 }
-.table__cell_headling_theme_dark {
+.table__headling_theme_dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
   z-index: 1;
 }
 
-.table__cell_text_theme_dark {
+.table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -266,6 +267,7 @@
   width: 877px;
   right: -210px;
   top: 0; 
+  
 }
 .footer{
   padding: 60px 0 40px;
@@ -274,33 +276,34 @@
   justify-content: center;
   color: #f2f2f2;
 }
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
 .footer__columns {
   display: flex;
-  min-height: 350px;
+  min-height: 250px;
   width: 90%;
+  justify-content: space-between;
+
 }
 .footer__column_content_copyright {
   display: flex;
-  flex-basis: 711px;
   flex-direction: column;
+  flex-basis: 711px;
   justify-content: space-between;
 }
 .logo__place_footer {
   width: 183px;
   height: 35px;
 }
-.footer__column_content_info-and-social{
-  display: flex;
-  flex-basis: 711px;
-  justify-content: space-between;
-}
+
 .footer__column_content_info{
   display:flex;
   flex-direction: column;
-  margin-left: 40%;
-  
 }
-.footer__column-headling {
+.footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -313,7 +316,7 @@
   text-decoration: none;
   color: #f2f2f2;
 }
-.footer__column-headling_links_mentor .footer__column-headling_links_inst {
+.footer__column_links:nth-of-type(3n){
   margin-bottom: 16px;
 }
 .footer__column_content_social {
