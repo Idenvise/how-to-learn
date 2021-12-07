@@ -31,7 +31,7 @@
 
 .logo_place_header {
   left: 64px;
-  top: 30px;  
+  top: 30px;
   position: absolute;
   background-image: url('../images/logo_place_header.svg');
 }
@@ -41,7 +41,7 @@
   align-self: center;
   line-height: 96px;
   font-size: 108px;
-  margin: 0 0 0 64px ;
+  margin-left: 64px;
   font-weight: bold;
   z-index: 2;
 }
