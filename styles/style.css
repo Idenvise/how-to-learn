@@ -124,6 +124,7 @@
   flex-direction: column;
   margin-top: 100px;
   display: flex;
+  padding-bottom: 100px;
 }
 .section-title {
   text-align: center;
@@ -172,7 +173,6 @@
   margin: 20px 0 0;
 }
 .feynman {
-  padding-top: 100px;
   min-height: 890px;
   width: 100%;
   display: flex;
